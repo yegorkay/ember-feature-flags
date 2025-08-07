@@ -193,7 +193,13 @@ This addon is built as a **V2 addon** using modern tooling:
 pnpm install
 
 # Run tests
-cd test-app && npx ember test
+cd test-app && pnpm test:ember
+
+# Start development server
+cd test-app && pnpm start
+
+# Lint test app
+cd test-app && pnpm lint
 
 # Lint addon code
 cd addon && pnpm lint
@@ -201,7 +207,7 @@ cd addon && pnpm lint
 # Build addon
 cd addon && pnpm build
 
-# Watch mode for development
+# Watch mode for addon development
 cd addon && pnpm start
 ```
 
